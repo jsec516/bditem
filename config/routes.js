@@ -33,9 +33,10 @@ module.exports.routes = {
   ***************************************************************************/
 
     'get /': 'HomeController.index',
-    'get /signup': 'RegisterController.new',
-    'get /signin': 'LoginController.new',
-    'get /new-buy-offer': 'BuyOfferController.new'
+    'get /signup': 'RegisterController.get',
+    'get /signin': 'LoginController.get',
+    'get /buy-offer': 'BuyOfferController.index',
+    'get /post-buy-offer': 'BuyOfferController.new'
 
   /***************************************************************************
   *                                                                          *

@@ -1,0 +1,258 @@
+<div class="container custom-container">
+		<div class=" ">
+			<div class="span8 offset1">
+				<div class="right_sidebar">
+					<div class="row1 ">
+						<div class='form'>
+							<form id="item-form" action="/frontend/FreeBuyingOfferForm" method="post">
+							<fieldset>
+								<legend>Post Buy Lead</legend>
+								<div>
+									<div class="form-label-container">
+										<div class="label_class label_class">
+											Choose Wheather product or service
+										</div>
+									</div>	
+									<div class="form-field-container">
+										<div class="form-field">
+											<select class='span5 form-control service' data-toggle="tooltip" data-placement="right" title="Tooltip on right">
+												<option value='Product'>Product</option>	
+												<option value='Service'>Service</option>
+											</select>
+										</div>
+									</div>											
+								</div>
+								
+								<div>
+									<div class="form-label-container">
+										<div class="label_class label_class">
+											<label for="Item_category_id" class="required">Category <span class="required">*</span></label>
+										</div>
+									</div>	
+									<div class="form-field-container">
+										<div class="form-field">
+											<select class='span5 form-control category' name='Item[category_id]'>
+											</select>
+										</div>
+									</div>											
+								</div>
+								
+								<div>
+									<div class="form-label-container">
+										<div class="label_class label_class">
+											<label for="Item_subcategory_id" class="required">Sub-category <span class="required">*</span></label>
+										</div>
+									</div>	
+									<div class="form-field-container">
+										<div class="form-field">
+											<select class='span5 form-control subcategory' name='Item[subcategory_id]'>
+											</select>
+										</div>
+									</div>											
+								</div>
+								
+								<div>
+									<div class="form-label-container">
+										<div class="label_class label_class">
+											<label for="Item_sub_sub_category_id">Super-Sub Category</label>
+										</div>
+									</div>	
+									<div class="form-field-container">
+										<div class="form-field">
+											<select class='span5 form-control grand-child-category' name='Item[sub_sub_category_id]'>
+											</select>
+										</div>
+									</div>											
+								</div>
+								
+								<div>
+									<div class="form-label-container">
+										<div class="label_class label_class">
+											<label for="Item_title" class="required">Product/Service <span class="required">*</span></label>
+										</div>
+									</div>	
+									<div class="form-field-container">
+										<div class="form-field">
+                                            <input class="span4" size="35" placeholder="I want to buy" data-toggle="tooltip" data-placement="right" title="" name="Item[title]" id="Item_title" type="text" maxlength="255" data-original-title="Your Item Name">
+										</div>
+									</div>											
+								</div>
+								
+								
+								<div>
+									<div class="form-label-container">
+										<div class="label_class label_class" style="">
+											<label for="Item_description" class="required">Description <span class="required">*</span></label>&nbsp;
+										</div>
+									</div>
+									<div class="form-field-container">
+										<div class="form-field">
+                                            <textarea class="span4 commmon_textarea" size="35" placeholder="Product/Service Description" data-toggle="tooltip" data-placement="right" title="" name="Item[description]" id="Item_description" data-original-title="Your Item Description"></textarea>
+										</div>
+									</div>
+								</div>
+								
+								<div>
+									<div class="form-label-container">
+										<div class="label_class label_class">
+											<label for="Item_amount" class="required">Quantity <span class="required">*</span></label>
+										</div>
+									</div>	
+									<div class="form-field-container">
+										<div class="form-field">
+											<input class="span4" size="35" placeholder="1000 pcs" data-toggle="tooltip" data-trigger="hover" data-placement="right" title="" name="Item[amount]" id="Item_amount" type="text" maxlength="10" data-original-title="Amount you want to purchase">
+										</div>
+									</div>											
+								</div>
+								
+								<div>
+									<div class="form-label-container">
+										<div class="label_class label_class">
+											<label for="Item_unit_id" class="required">Unit <span class="required">*</span></label>
+										</div>
+									</div>	
+									<div class="form-field-container">
+										<div class="form-field">
+											<select class="span4" name="Item[unit_id]" id="Item_unit_id">
+                                            </select>
+										</div>
+									</div>											
+								</div>
+								
+								
+								<div>
+									<div class="form-label-container">
+										<div class="label_class label_class">
+											<label for="Item_unit_id" class="required">No of Bids willing to receive  <span class="required">*</span></label>
+										</div>
+									</div>	
+									<div class="form-field-container">
+										<div class="form-field">
+											<input class="span4" size="35" data-toggle="tooltip" data-placement="right" title="" name="Item[expected_bid_no]" id="Item_expected_bid_no" type="text" data-original-title="This is the number of sellers who will be able to bid on this buying offer. E.g- If you write '10' it means, you'll be able to receive up to 10 different quotations">
+										</div>
+									</div>											
+								</div>
+								
+								
+								<div class="date" id="dp3" data-date-format="yyyy-mm-dd">
+									<div class="form-label-container">
+										<div class="label_class label_class">
+                                            <label for="Item_unit_id" class="required">Estimated Procurement Date  <span class="required">*</span></label>
+										</div>
+									</div>	
+									<div class="form-field-container">
+										<div class="form-field">
+											<input class="span4" size="35" data-toggle="tooltip" data-placement="right" title="" name="Item[procurement_date]" id="Item_procurement_date" type="text" data-original-title="This is the date within which you would like this product/service to be delivered. The offer will expire after this date">
+											<span class="add-on"><i class="icon-th"></i></span>
+										</div>
+									</div>									
+								</div>
+								
+								<div>
+									<div class="form-label-container">
+										<div class="label_class label_class">
+											<label for="Country_country">Your Country</label>
+										</div>
+									</div>	
+									<div class="form-field-container">
+										<div class="form-field">
+											<select class="span4 country" name="Item[country_id]" id="Item_country_id">
+                                            </select>
+										</div>
+									</div>											
+								</div>
+								
+								<div>
+									<div class="form-label-container">
+										<div class="label_class label_class">
+											<label for="Item_city_id" class="required">City <span class="required">*</span></label>
+										</div>
+									</div>	
+									<div class="form-field-container">
+										<div class="form-field">
+											<select name="Item[city_id]" class="span4 city">
+											</select>
+										</div>
+									</div>											
+								</div>
+								
+								<div>
+									<div class="form-label-container">
+										<div class="label_class label_class">
+											<label for="Item_pur_country_id">From Where You want to buy ?</label>
+										</div>
+									</div>	
+									<div class="form-field-container">
+										<div class="form-field">
+											<select class="span4 country" name="Item[country_id]" id="Item_country_id">
+                                            </select>
+										</div>
+									</div>											
+								</div>
+								<div>
+									<div class="form-label-container">
+										<div class="label_class label_class">
+											<label for="Item_city_id" class="required">City <span class="required">*</span></label>
+										</div>
+									</div>	
+									<div class="form-field-container">
+										<div class="form-field">
+											<select name="Item[pur_city_id]" class="span4 pur_city">
+												<option value="0">Any</option>
+											</select>
+										</div>
+									</div>											
+								</div>
+								
+								
+								<div>
+									<div class="form-label-container">
+										<div class="label_class label_class">
+											<label>Email</label>
+										</div>
+									</div>	
+									<div class="form-field-container">
+										<div class="form-field">
+											<input type="text" name="email" placeholder="Your Email" class="span4 <?php echo ($mail_error=='1' )? 'error':''; ?>" />
+										</div>
+									</div>											
+								</div> 
+								
+								<div>
+									<div class="form-label-container">
+										<div class="label_class label_class">
+											<label>Phone</label>
+										</div>
+									</div>	
+									<div class="form-field-container">
+										<div class="form-field">
+											<input type="text" name="Item[contact_no]" placeholder="Your Phone" class="span4 <?php echo ($mail_error=='1' )? 'error':''; ?>" />
+										</div>
+									</div>											
+								</div> 
+								
+								<div class="clear">
+									&nbsp;
+								</div>
+								
+							</fieldset>
+							
+							<div class="span6 center">
+								<div class="span2 pull-left" style="visibility:hidden">
+									<div class="cancel">
+										<a class="black" href="#">Cancel</a>
+									</div>
+								</div>
+								<div class="span2 pull-left form_button">										
+									<input class="btn-theme-color white" type="submit" name="yt0" value="Post" data-original-title="" title="">									
+								</div>
+							</div>
+							</form>
+						</div>
+						
+						
+					</div><!-- end row-1-->
+				</div>
+			</div>
+		</div>
+	</div>

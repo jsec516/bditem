@@ -1,0 +1,83 @@
+<div class="span3 margin10 span3-custom">
+	<!-- start block-->
+	<div class="block block-list clearfix">
+		<div class="block-heading silver">
+			<div class="symbol">Filters </div>
+		</div>
+		
+		<div class="block-body filter-body">
+			<form class="filter_result_frm" method="post" action="/searchOffers" >
+			<div class="bottom-header">
+				
+				<div class="block-search">
+				<label>Country</label>
+					<select name="country" class='country_dp'>
+						<option value="">Any</option>
+							<option value=""></option>
+					</select>
+				</div>
+				
+				<div class="block-search">
+				<label>City</label>
+					<select name="city" class='city_area'>
+						<option value="">Any</option>
+					</select>
+				</div>
+				
+				<div class="block-search">
+				<label>Type</label>
+					<select class="tier_type" name="item_type">
+						<option value="">Any</option> 
+						<option value="product">Product </option>
+						<option value="service">Service </option>
+					</select>
+				</div>
+				
+				<div class="block-search">
+				<label>Category</label>
+					<select class="tier_category" name="item_category" >
+						<option value="">Any</option>
+					</select>
+				</div>
+				
+				<div class="block-search">
+				<label>Sub Category</label>
+					<select class="tier_subcategory" name="item_subcategory" >
+						<option value="">Any </option> 
+					</select>
+				</div>
+				
+				<div class="block-search">
+				<label>Super Sub Category</label>
+					<select class="tier_grand_child_category" name="item_super_subcategory" >
+						<option value="">Any </option> 
+					</select>
+				</div>
+				<div class="block-search">
+				<input type="hidden" name="item_req_type" value="" />
+				<input type="hidden" name="search_term" value="" />
+				<input type="submit" name="filter" value="Filter" />
+				</div>
+			</div>
+			</form>
+		</div>
+	</div> <!-- end block-->
+	
+    <div class="box clearfix">
+        <div class="leads-running">
+            <div class="title-lead">
+                <h3>Our Promo offers</h3>
+            </div>
+            <div class="leads-item">
+                <img class='ad_image' src="/images/advertisement/1405573246.jpg" alt="" />
+            </div>
+        </div>
+    </div>
+    
+	<div class="live-chat clearfix">
+		<a href="#">
+			<img style="" alt="Right-Banner" src="/images/live-chat.png" title="Right-Banner">
+		</a>
+	</div>
+	<input type="hidden" name="type" value="" />
+</div>

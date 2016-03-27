@@ -1,0 +1,77 @@
+<div class="container custom-container">
+    <%- partial ('../partials/search/left.ejs') %>
+    <div class="span6 margin10 content-main">
+        <div class="sort-box">
+            <form method="post" action="/frontend/searchResultPage/searchOffers" class="sort_form">
+                <span class="bold">Sort by: </span> Date Posted <select name="post_submission_time" class="post_submission_time"><option value="">--Select --</option><option value="24">Last 24hours</option><option value="6">Last 6hours</option></select> <span>Bids available</span> <input class="buy_sort_check_box bids_available_check" name="bids_available" type="checkbox" />
+            </form>
+            <div class="result-box">
+            5 result(s) found.
+            </div>
+        </div>
+        
+        <div class="box  clearfix">
+            <ul class="nav nav-tabs" id="result_display">
+                <li class="active">					
+                    <a  href="">Buying Offers</a> 
+                </li>				
+                <li>
+                    <a  href="">Selling Offers</a> 
+                </li>
+                <li>
+                    <a  href="">Products</a> 
+                </li>
+            </ul>
+            <div class="row1" id="offer_area">
+                <div class="product-item box clearfix">
+                    <div class="product-desc-buy-leads  ">
+                        <div class=" prdt " style="position:relative;">
+                        <img class='poster_image' width="170" src="/images/verified_icon.png" alt=""> 
+                            <div class="desc">
+                                <ul>
+                                    <li>
+                                        <h4>
+                                            <a href="" class="product-title">Shoes</a>
+                                        </h4>
+                                    </li>
+                                    
+                                    <li style="color: #999;font-size: 12px;"> 
+                                        <strong>Posted :</strong> 22-02-2016
+                                        <strong>Bids left :</strong>   5
+                                        <strong>verfied till:</strong> 28-02-2016
+                                    </li>
+                                    <li>
+                                        <p class="pr-description">N/A</p>
+                                    </li>
+                                    <li class="location-long" >
+                                        <strong>Client:</strong>  Dhaka, BD  <strong>preferred location:</strong> Dhaka, BD
+                                    </li>
+                                </ul>
+                            </div >
+                            <div class="contact-desc"></div>
+                        </div>
+                    </div>
+                </div><!-- end box-->
+            </div>
+        </div><!-- end row-1-->
+        <div class="clearfix"></div>
+            <div class="row1">
+                <div class="banner" id="banner2">
+                    <div style="display: block;">
+                        <img class='ad_image' alt="sub-banner" src="/images/advertisement/1401339317.png" title="sub-banner">
+                    </div>
+                </div>  
+            </div><!-- end row2-->
+        </div>
+
+    <div id="enquiry_modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <form class='' action="" method='post'>
+            <h4 style="margin-left:20px;">Write your enquiry message</h4>
+            <textarea name="message" class="commmon_textarea" style="width:90%;margin-left:20px;background-color:#E6E6E6;resize:vertical;"></textarea>
+            <input type="hidden" name="item_id" value="" />
+            <input type="hidden" name="user_id" value="" />
+            <button type="submit" class="btn btn-warning" style="margin-left:20px;margin-bottom:20px;">Submit</button>
+        </form>
+    </div>
+    <%- partial ('../partials/search/right.ejs') %>
+</div>
