@@ -1,0 +1,9 @@
+.admin_login_container{	
+	width:400px;
+	margin:0px auto;
+	padding:20px;
+}
+.inside_login_container{
+	border:2px solid #848484;	
+	padding:20px;
+}
