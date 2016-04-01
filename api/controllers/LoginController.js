@@ -6,12 +6,12 @@
 
 module.exports = {
 
-    get: function (req, res) {
+    new: function (req, res) {
         return res.view('auth/signin', {
         });
     },
 
-    post: function (req, res) {
+    create: function (req, res) {
         return res.json({
             todo: 'create() is not implemented yet!'
         });

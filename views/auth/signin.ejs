@@ -17,7 +17,7 @@
                                 </div>	
                                 <div class="form-field-container">
                                     <div class="form-field">
-                                        <input class="span4" size="35" title="Your Email" name="LoginForm[email]" id="LoginForm_email" type="text">
+                                        <input class="span4" size="35" title="Your Email" name="email" id="LoginForm_email" type="text">
                                     </div>
                                 </div>											
                             </div>
@@ -31,7 +31,7 @@
                                 </div>
                                 <div class="form-field-container">
                                     <div class="form-field">
-                                        <input class="span4" size="35" title="Your Password" name="LoginForm[password]" id="LoginForm_password" type="password">
+                                        <input class="span4" size="35" title="Your Password" name="password" id="LoginForm_password" type="password">
                                     </div>
                                 </div>
                             </div>
@@ -61,7 +61,7 @@
                                     <a class="black" href="#">Cancel</a>
                                 </div>
                             </div>
-                            <div class="span2 pull-left form_button">										
+                            <div class="span2 pull-left form_button">									<input type='hidden' name='_csrf' value='<%= _csrf %>'>	
                                 <input class="btn-theme-color white" type="submit" name="yt0" value="Login">											
                             </div>
                         </div>

@@ -10,84 +10,84 @@
                                 <div>
                                     <div class="form-label-container">
                                         <div class="label_class label_class">
-                                            <label for="RegisterForm_full_name" class="required">Full Name <span class="required">*</span></label>&nbsp;
+                                            <label for="fullName" class="required">Full Name <span class="required">*</span></label>&nbsp;
                                         </div>
                                     </div>  
                                     <div class="form-field-container">
                                         <div class="form-field">
-                                            <input class="span4" size="35" title="Type your Full name" name="RegisterForm[full_name]" id="RegisterForm_full_name" type="text">
+                                            <input class="span4" size="35" title="Type your Full name" name="fullname" id="fullName" type="text">
                                         </div>
                                     </div>                                          
                                 </div>
                                 <div>
                                     <div class="form-label-container">
                                         <div class="label_class label_class">
-                                            <label for="RegisterForm_company_name">Company Name</label>&nbsp;
+                                            <label for="companyName">Company Name</label>&nbsp;
                                         </div>
                                     </div>  
                                     <div class="form-field-container">
                                         <div class="form-field">
-                                            <input class="span4" size="35" title="Type your Company name" name="RegisterForm[company_name]" id="RegisterForm_company_name" type="text">
+                                            <input class="span4" size="35" title="Type your Company name" name="company_name" id="companyName" type="text">
                                         </div>
                                     </div>                                          
                                 </div>
                                 <div>
                                     <div class="form-label-container">
                                         <div class="label_class label_class">
-                                            <label for="RegisterForm_contact_no">Contact No</label>&nbsp;
+                                            <label for="contactNo">Contact No</label>&nbsp;
                                         </div>
                                     </div>  
                                     <div class="form-field-container">
                                         <div class="form-field">
-                                            <input class="span4" size="35" title="Type your Contact number" name="RegisterForm[contact_no]" id="RegisterForm_contact_no" type="text">
+                                            <input class="span4" size="35" title="Type your Contact number" name="contact" id="contactNo" type="text">
                                         </div>
                                     </div>                                          
                                 </div>
                                 <div>                                           
                                     <div class="form-label-container">
                                         <div class="label_class label_class" style=""> 
-                                            <label for="RegisterForm_email" class="required">Email Address <span class="required">*</span></label>&nbsp;
+                                            <label for="email" class="required">Email Address <span class="required">*</span></label>&nbsp;
                                         </div>
                                     </div>                                          
                                     <div class="form-field-container">
                                         <div class="form-field">
-                                            <input class="span4" size="35" title="Type your Email" name="RegisterForm[email]" id="RegisterForm_email" type="text">
+                                            <input class="span4" size="35" title="Type your Email" name="email" id="email" type="text">
                                         </div>
                                     </div>                                      
                                 </div>
                                 <div>
                                     <div class="form-label-container">
                                         <div class="label_class label_class" style="">
-                                            <label for="RegisterForm_password" class="required">Password <span class="required">*</span></label>&nbsp;
+                                            <label for="password" class="required">Password <span class="required">*</span></label>&nbsp;
                                         </div>
                                     </div>
                                     <div class="form-field-container">
                                         <div class="form-field">
-                                            <input class="span4" size="35" title="Type your Email" name="RegisterForm[password]" id="RegisterForm_password" type="password" maxlength="40">
+                                            <input class="span4" size="35" title="Type your Email" name="password" id="password" type="password" maxlength="40">
                                         </div>
                                     </div>
                                 </div>
                                 <div>
                                     <div class="form-label-container">
                                         <div class="label_class label_class" style="">
-                                            <label for="RegisterForm_repeat_password">Confirm Password</label>&nbsp;
+                                            <label for="repeatPassword">Confirm Password</label>&nbsp;
                                         </div>
                                     </div>
                                     <div class="form-field-container">
                                         <div class="form-field">
-                                            <input class="span4" size="35" title="Type your Email" name="RegisterForm[repeat_password]" id="RegisterForm_repeat_password" type="password" maxlength="40">
+                                            <input class="span4" size="35" title="Type your Email" name="repeat_password" id="repeatPassword" type="password" maxlength="40">
                                         </div>
                                     </div>
                                 </div>
                                 <div>
                                     <div class="form-label-container">
                                         <div class="label_class label_class" style="">
-                                            <label for="RegisterForm_biz_loc_id">Business Location</label>&nbsp;
+                                            <label for="bizLoc">Business Location</label>&nbsp;
                                         </div>
                                     </div>
                                     <div class="form-field-container">
                                         <div class="form-field">
-                                            <select class="span4 country" name="RegisterForm[biz_loc_id]" id="RegisterForm_biz_loc_id">
+                                            <select class="span4 country" name="biz_loc" id="bizLoc">
                                                 <option value="1">Bangladesh</option>
                                                 <option value="2">United States</option>
                                                 <option value="3">Canada</option>
@@ -272,7 +272,8 @@
                                     </div>
                                 </div>
                                 <div class="span2 pull-left form_button"> 
-                                    <input class="btn-theme-color white" type="submit" name="yt0" value="Register">                                         
+                                    <input type='hidden' name='_csrf' value='<%= _csrf %>'>
+                                    <input class="btn-theme-color white" name="submit" type="submit" name="yt0" value="Register">                                         
                                 </div>
                             </div>
                             <div class="span10" style="padding-left:255px;">
