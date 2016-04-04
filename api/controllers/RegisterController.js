@@ -37,7 +37,12 @@ module.exports = {
         }).then(function (createdUser) {
             return res.send(createdUser);
         }).catch(function (err) {
-            return res.badRequest(err);
+            if (err.type === 'db') {
+                
+            } else {
+                
+            }
+            return res.badSignupRequest(err);
         });
         // console.log('first name', req.param('full_name'));
         // return res.json({

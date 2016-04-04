@@ -13,11 +13,11 @@ validateEmail = function (email) {
         }).exec({
             // An unexpected error occurred.
             error: function (err) {
-                reject(err);
+                reject({type: 'email-general', errors: err});
             },
             // The provided string is not an email address.
             invalid: function () {
-                reject('Doesn\'t look like an email address to me!');
+                reject({type: 'email-invalid', errors: 'Invalid email address to me!'});
             },
             // OK.
             success: function () {
@@ -33,7 +33,7 @@ encryptPassword = function (rawPassword) {
             password: rawPassword
         }).exec({
             error: function (err) {
-                reject(err);
+                reject({type: 'password', errors: err});
             },
 
             success: function (result) {
@@ -47,7 +47,7 @@ create = function (options) {
     return new Promise(function (resolve, reject) {
         User.create(options).exec(function (err, createdUser) {
             if (err) {
-                reject({type: 'create', errors: err});
+                reject({type: 'db', errors: err});
             }
 
             // send createdUser object
